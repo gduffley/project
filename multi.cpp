@@ -3,6 +3,7 @@
 #include "sensor_msgs/LaserScan.h"
 #include <cstdlib> // Needed for rand()
 #include <ctime> // Needed to seed random number generator with a time value
+//test
 
 class multi{
 public:
