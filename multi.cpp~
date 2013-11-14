@@ -8,7 +8,7 @@
 class multi{
 public:
 	// Construst a new RandomWalk object and hook up this ROS node
-	// to the simulated robot's velocity control and laser topic
+	// to the simulated robot's velocity control and laser topics
 	multi(ros::NodeHandle& nh) :
 		fsm(FSM_MOVE_FORWARD),
 		msf(MSF_MOVE_FORWARD), 
@@ -29,7 +29,6 @@ public:
 	};
  
 // Send a velocity command
-void dummy(int a, int b){};
 void move0(double linearVelMPS, double angularVelRadPS) {
 	geometry_msgs::Twist msg; // The default constructor will set all commands to 0
 	msg.linear.x = linearVelMPS;
