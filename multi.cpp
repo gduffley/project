@@ -29,7 +29,7 @@ public:
 	};
  
 // Send a velocity command
-int dummy(int a){
+int dummy(int a, int b){
 	return a; 
 };
 void move0(double linearVelMPS, double angularVelRadPS) {
