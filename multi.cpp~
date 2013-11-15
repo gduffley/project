@@ -29,7 +29,9 @@ public:
 	};
  
 // Send a velocity command
-void dummy(int a, char b){};
+int dummy(int a, char b){
+	return a; 
+};
 void move0(double linearVelMPS, double angularVelRadPS) {
 	geometry_msgs::Twist msg; // The default constructor will set all commands to 0
 	msg.linear.x = linearVelMPS;
